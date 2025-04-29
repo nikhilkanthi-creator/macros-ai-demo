@@ -9,6 +9,6 @@ Rails.application.routes.draw do
 
   get("/blank_form", { :controller => "macros", :action => "display_form"})
 
-  get("process_inputs", { :controller => "solutions", :action => "process_inputs"})
+  post("/process_inputs", { :controller => "macros", :action => "process_inputs"})
   
 end
