@@ -1,4 +1,11 @@
 <h1>Results</h1>
 
-<%= @the_description %>
-<%= @the_image %>
+<img src="<%= @the_image_converted%>" height = 200px>
+
+<div>Carbohydrates: <%= @carbohydrates %> grams</div>
+<div>Fats: <%= @fats %> grams</div>
+<div>Protein: <%= @protein %> grams</div>
+<div>Total Calories: <%= @total_calories %> grams</div>
+<div>Notes: <%= @free_text %> </div>
+
+<a href="/blank_form">Estimate another</a>
